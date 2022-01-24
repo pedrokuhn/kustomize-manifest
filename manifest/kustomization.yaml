@@ -1,7 +1,5 @@
 resources:
   - ./deployment.yaml
 
-patches:
-  - path: kustomize_patch/patch.yaml
-    target:
-      kind: Deployment
+patchesStrategicMerge:
+  - kustomize_patch/patch.yaml
