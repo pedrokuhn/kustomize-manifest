@@ -1,0 +1,7 @@
+resources:
+  - deployments.yaml
+
+patches:
+  - path: kustomize_patch/patch.yaml
+    target:
+      kind: Deployment
