@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
         - name: example-app
-          image: <+serviceConfig.serviceDefinition.spec.variables.image>
+          image: <+artifact.image>
