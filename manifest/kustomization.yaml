@@ -1,5 +1,5 @@
 resources:
-  - deployments.yaml
+  - ./deployment.yaml
 
 patches:
   - path: kustomize_patch/patch.yaml
