@@ -1,5 +1,2 @@
 resources:
   - ./deployment.yaml
-
-patchesStrategicMerge:
-  - kustomize_patch/patch.yaml
