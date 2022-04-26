@@ -38,6 +38,3 @@ spec:
       containers:
         - name: nginx
           image: nginx:alpine
-          args:
-            - one
-            - two
