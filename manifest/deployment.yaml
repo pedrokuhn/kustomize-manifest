@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: dasdasda-delegate-service
-  namespace: harness-delegate-ng
+  namespace: test-bg
 spec:
   type: ClusterIP
   selector:
@@ -16,7 +16,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: example-deploy
-  namespace: test-kustomize
+  namespace: test-bg
   labels:
     app: example-app
   annotations:
@@ -37,7 +37,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx
+          image: nginx:alpine
           args:
             - one
             - two
